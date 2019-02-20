@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		#info {
+		font-family: Georgia;
+		padding: 20px;
+		background-color: rgb(169,169,169);
+	}
+	body{
+		background-color: rgb(224,255,255);
+	}
+</style>
+</head>
+<body>
+	<div id = "info">
+	<div style = "text-align:right">
+	<a href = "resume.html" alt = "home"> Back to Homepage </a>
+	</div>
+	<h1> Database Project</h1>
+	<p>Project for: CS 157A Database Management Systems
+	</div>
+	<h1> Overview </h1>
+	<p> A team that included myself along with two others were assigned to create a database system where Users interact with the database by using certain functions. An idea was brainstormed by each of us, and we came up with three different ideas: I proposed we create a platform where users can buy games - basically like Steam, a digital distribution platform where users can purchase video games. My teammates suggested that we could create a platform that would be similar to Yelp, and a platform that would be similar to Amazon. We ended up designing the game distribution platform.
+	<h2> Requirements </h2>
+	<ul>
+	<li> A minimum of 5 tables that are relational to each other in some way. </li>
+	<li>15 Distinct Functions for Users, excluding database admin functions. </li>
+	<li> At least one trigger involved in the database. </li>
+	<h2> Features </h2>
+	<p> We created 6 total relational tables, which included:
+		<ul>
+			<li> User </li>
+			<li> Credit Card </li>
+			<li> Game </li>
+			<li> Review </li>
+			<li> Publisher </li>
+			<li> Owned Library </li>
+		</ul>
+		Owned library is relational to User and Game to their respective ID's.
+		<br>
+		Publisher is relational to game, where publisher is the publisher of the game.
+		<br>
+		Review is relational to User and Game on their ID's.
+		<br>
+		Game references publisher.
+		<br>
+		User references Credit Card on their ID, name, and credit card number.
+	</p>
+	<br>
+	<p> For the 15 user functions, what we included and came together to create the functions users would most need:
+		<ul>
+		<li>Seeing the ratings of games in order from highest to lowest (5 being the highest, 1 being the lowest)</li>
+		<li> Sort games by price</li>
+		<li> Search a game by the name</li>
+		<li> Search games made by a certain publisher</li>
+		<li> Purchase a game</li>
+		<li> Check which games they own</li>
+		<li> Deposit money/funds into the platform</li>
+		<li> Insert their credit card info into their account</li>
+		<li> Reset their password</li>
+		<li> Create an account</li>
+		<li> Find the user who has bought the most games</li>
+		<li> Add a review to a game</li>
+		<li> Find a game that has no reviews yet</li>
+		<li> Edit a review that they have written</li>
+		<li> Deleting their reviews</li>
+		</ul>
+	A link to the full report of this project can be found below.</p>
+	<a href="prj1report.pdf">Link</a>
+</html>

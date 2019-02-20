@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		#info {
+		font-family: Georgia;
+		padding: 20px;
+		background-color: rgb(169,169,169);
+	}
+	body{
+		background-color: rgb(224,255,255);
+	}
+</style>
+</head>
+<body>
+	<div id = "info">
+	<div style = "text-align:right">
+	<a href = "resume.html" alt = "home"> Back to Homepage </a>
+	</div>
+	<h1> Emergency Room Simulation</h1>
+	<p>Project for: CS 146 Data Structures and Algorithms
+	</div>
+	<h1> Overview </h1>
+	<p> This was a project that was assigned to every student. The project requirements included creating your own emergency room simulation. Basically, the problem is broken down into a few things: An emrgency room cannot take everyone at once. It is prioritized - those who have a more severe injury are taken in first before others. For example, a person with a gunshot wound would be taken before someone with a broken arm, etc. The only requirement for this project was that a Red-Black tree had to be the choice of data structure, and that all the functions that modify/verify a red-black tree must be implemented, in Java. 
+		<h2> Features </h2>
+		<p> The way that I planned this is that every node in the red-black tree had two keys - one was the severity of their injury, and one was their name. There were 20 total patients in the simulation, so the levels of severity ranged from 1-20, with 20 being the highest. The simulation is basically from the doctors/emergency room proctors point of view. In the simulation, it gives the user the list of all the patients in the emergency room with their respective severity level of injury. From there, the doctor can choose who they want to "take care" of, but obviously they'd want to take the most severe level first. But, after the person is taken care of, they are deleted from the RB-Tree. From here, the RB-Tree must be rebalanced because of the rules that are accompanied with RB-trees. So, the tree automatically rebalances with the delete function.
+		<br>
+		A link to the full report of this project can be found below, including screenshots of the program, the key concepts, functions included, problems encountered, and lessons learned.
+	</p>
+		<a href="prj2report.pdf">Link</a>
+
+</div>
+</body>
+</html>
